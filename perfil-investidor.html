@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Teste de Perfil de Investidor | Construa Seu Capital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Descubra seu perfil de investidor com este teste gratuito. Saiba se você é conservador, moderado ou arrojado e aprenda como montar sua carteira de investimentos.">
+<meta name="keywords" content="perfil de investidor, teste de investidor, investimentos, renda fixa, renda variável, educação financeira, construir patrimônio, Construa Seu Capital, investimentos para iniciantes, como investir, carteira de investimentos">
+<meta name="author" content="Construa Seu Capital">
+<meta name="robots" content="index, follow">
+<meta name="language" content="pt-BR">
+
+<meta property="og:title" content="Teste de Perfil de Investidor | Construa Seu Capital">
+<meta property="og:description" content="Faça o teste gratuito e descubra seu perfil de investidor. Aprenda como montar sua carteira de investimentos de forma consciente e segura.">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Teste de Perfil de Investidor | Construa Seu Capital">
+<meta name="twitter:description" content="Descubra se você é um investidor conservador, moderado ou arrojado. Teste gratuito para quem quer começar a investir com segurança.">
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(180deg,#020617,#0f172a);
+    color: #e5e7eb;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+.container { max-width:520px; margin:auto; padding:24px; }
+
+.logo-area { display:flex; flex-direction:column; align-items:center; margin-bottom:18px; }
+.logo-img { width:90px; border-radius:50%; box-shadow:0 0 15px rgba(0,0,0,.4); }
+.logo-texto { margin-top:8px; font-weight:bold; font-size:18px; }
+
+.card { background:#020617; border-radius:14px; padding:22px; box-shadow:0 0 30px rgba(0,0,0,.3); }
+
+h1 { text-align:center; font-size:22px; }
+
+.question p { font-weight:bold; }
+.question label { display:block; padding:6px; border-radius:6px; }
+.question label:hover { background:rgba(255,255,255,.05); }
+
+button { width:100%; padding:14px; background:#22c55e; border:none; border-radius:10px; font-size:16px; font-weight:bold; cursor:pointer; }
+
+.result { display:none; margin-top:20px; text-align:center; }
+
+.pizza { width:120px; height:120px; border-radius:50%; margin:15px auto; }
+
+.profile-text { font-size:14px; line-height:1.5; }
+
+.cta { margin-top:20px; text-align:center; font-size:14px; color:#a5b4fc; }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo-area">
+    <img src="logo.png" class="logo-img">
+    <div class="logo-texto">Construa Seu Capital</div>
+</div>
+
+<div class="card">
+
+<h1>Descubra seu Perfil de Investidor</h1>
+
+<div class="question">
+<p>Como você reage a oscilações no mercado?</p>
+<label><input type="radio" name="q1" value="1"> Fico desconfortável e evito perdas</label>
+<label><input type="radio" name="q1" value="2"> Aceito variações moderadas</label>
+<label><input type="radio" name="q1" value="3"> Vejo como oportunidade</label>
+</div>
+
+<div class="question">
+<p>Qual é seu principal objetivo financeiro?</p>
+<label><input type="radio" name="q2" value="1"> Preservar patrimônio</label>
+<label><input type="radio" name="q2" value="2"> Crescer com equilíbrio</label>
+<label><input type="radio" name="q2" value="3"> Maximizar ganhos</label>
+</div>
+
+<div class="question">
+<p>Por quanto tempo pretende investir?</p>
+<label><input type="radio" name="q3" value="1"> Curto prazo</label>
+<label><input type="radio" name="q3" value="2"> Médio prazo</label>
+<label><input type="radio" name="q3" value="3"> Longo prazo</label>
+</div>
+
+<div class="question">
+<p>Quanto do seu capital você tolera ver oscilando?</p>
+<label><input type="radio" name="q4" value="1"> Menos de 10%</label>
+<label><input type="radio" name="q4" value="2"> 10% a 30%</label>
+<label><input type="radio" name="q4" value="3"> Mais de 30%</label>
+</div>
+
+<div class="question">
+<p>Como você se sente ao ver uma queda de 30% nos seus investimentos?</p>
+<label><input type="radio" name="q5" value="1"> Fico muito preocupado e penso em sair</label>
+<label><input type="radio" name="q5" value="2"> Fico atento, mas mantenho a estratégia</label>
+<label><input type="radio" name="q5" value="3"> Vejo como oportunidade para aportar mais</label>
+</div>
+</p>
+<button onclick="calcular()">Descobrir Meu Perfil</button>
+
+<div class="result" id="resultado"></div>
+
+<hr style="border:1px solid #1f2933; margin:25px 0;">
+
+<h2 style="text-align:center">Entenda todos os perfis de investidor</h2>
+
+<div class="profile-text">
+<b>🛡️ Conservador</b><br>
+Prioriza proteção do patrimônio, estabilidade e previsibilidade. Indicado para quem valoriza segurança, evita grandes oscilações e prefere crescimento gradual.
+<br><br>
+<b>⚖️ Moderado</b><br>
+Busca equilíbrio entre segurança e crescimento. Aceita riscos controlados, diversifica investimentos e constrói patrimônio de forma consistente.
+<br><br>
+<b>🚀 Arrojado</b><br>
+Busca crescimento acelerado e aceita volatilidade. Tem forte visão de longo prazo, maior exposição à renda variável e mentalidade estratégica.
+</div>
+
+<div class="cta">
+Aprenda a montar sua carteira no canal <b>Construa Seu Capital</b><br>
+<a href="https://www.youtube.com/@ConstruaSeuCapital" target="_blank" style="color:#22c55e;text-decoration:none;">
+👉 Acesse o canal no YouTube
+</a>
+</div>
+
+</div>
+</div>
+
+<script>
+function calcular(){
+let pontos=0;
+let r=document.querySelectorAll('input[type=radio]:checked');
+if(r.length<5){ alert("Responda todas as perguntas."); return; }
+r.forEach(x=>pontos+=parseInt(x.value));
+
+let perfil="", texto="", fixa=0, variavel=0;
+
+if(pontos<=7){
+perfil="🛡️ Conservador"; fixa=80; variavel=20;
+texto="Seu perfil é Conservador. Isso significa que sua prioridade é proteger o patrimônio e evitar perdas. Você valoriza previsibilidade, estabilidade e prefere investimentos com menor volatilidade, mesmo que isso implique retornos mais modestos. Esse perfil é ideal para quem busca segurança financeira, construção gradual de patrimônio e tranquilidade emocional ao investir.";
+}
+else if(pontos<=11){
+perfil="⚖️ Moderado"; fixa=60; variavel=40;
+texto="Seu perfil é Moderado. Você busca equilíbrio entre segurança e crescimento. Entende que algum risco é necessário para alcançar bons resultados, mas sem comprometer sua estabilidade financeira. Esse perfil combina disciplina, paciência e visão de médio a longo prazo.";
+}
+else{
+perfil="🚀 Arrojado"; fixa=30; variavel=70;
+texto="Seu perfil é Arrojado. Você tem alta tolerância ao risco e forte visão de longo prazo. Enxerga as oscilações do mercado como oportunidades e aceita volatilidade para buscar crescimento acelerado do patrimônio. Esse perfil costuma ser mais estratégico, resiliente e focado em resultados.";
+}
+
+let pizza = `conic-gradient(#22c55e ${fixa}%, #38bdf8 ${fixa}% ${fixa+variavel}%)`;
+
+let res = document.getElementById("resultado");
+res.style.display="block";
+res.innerHTML = `
+<h2>${perfil}</h2>
+<div class="pizza" style="background:${pizza}"></div>
+<p>Renda Fixa ${fixa}% | Renda Variável ${variavel}%</p>
+<p class="profile-text">${texto}</p>
+<p style="font-size:12px; opacity:0.8; margin-top:10px;">
+*A alocação apresentada é apenas uma sugestão educacional e não constitui recomendação de investimento.
+</p>
+`;
+}
+</script>
+
+</body>
+</html>
