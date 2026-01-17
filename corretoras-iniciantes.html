@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Corretoras sem Taxa para Iniciantes | Construa Seu Capital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #020b2d;
+      --border: #0f1b4c;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #020b2d, #020617);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020b2d, #020617);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .logo img {
+      max-height: 48px;
+      max-width: 160px;
+      object-fit: contain;
+      filter: brightness(1.1);
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .list {
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .list strong {
+      color: var(--accent);
+    }
+
+    .footer-note {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Corretoras sem Taxa para Iniciantes</h1>
+    <p class="subtitle">
+      Lista de corretoras brasileiras que oferecem corretagem zero, com foco em quem está começando
+      a investir e busca simplicidade, segurança e baixo custo.
+    </p>
+
+    <div class="grid">
+
+      <!-- Nubank / NuInvest -->
+      <div class="card">
+        <div class="logo">
+          <img src="assets/logos/nubank.png" alt="NuInvest - Nubank">
+        </div>
+        <h2>NuInvest (Nubank)</h2>
+        <p>Plataforma simples, ideal para quem está começando e já usa o Nubank no dia a dia.</p>
+        <div class="list">
+          <p><strong>Pontos fortes:</strong> Interface intuitiva, zero corretagem, integração com Nubank.</p>
+          <p><strong>Pontos fracos:</strong> Menos ferramentas avançadas.</p>
+        </div>
+      </div>
+
+      <!-- Clear -->
+      <div class="card">
+        <div class="logo">
+          <img src="assets/logos/clear.png" alt="Clear Corretora">
+        </div>
+        <h2>Clear</h2>
+        <p>Corretora popular entre iniciantes e traders que buscam custo zero.</p>
+        <div class="list">
+          <p><strong>Pontos fortes:</strong> Corretagem zero, muitas ferramentas educacionais.</p>
+          <p><strong>Pontos fracos:</strong> Plataforma pode confundir no início.</p>
+        </div>
+      </div>
+
+      <!-- Banco Inter -->
+      <div class="card">
+        <div class="logo">
+          <img src="assets/logos/inter.png" alt="Banco Inter">
+        </div>
+        <h2>Banco Inter</h2>
+        <p>Conta digital integrada com investimentos em renda fixa e variável.</p>
+        <div class="list">
+          <p><strong>Pontos fortes:</strong> Tudo em um só app, sem taxas.</p>
+          <p><strong>Pontos fracos:</strong> Ferramentas avançadas limitadas.</p>
+        </div>
+      </div>
+
+      <!-- XP -->
+      <div class="card">
+        <div class="logo">
+          <img src="assets/logos/xp.png" alt="XP Investimentos">
+        </div>
+        <h2>XP Investimentos</h2>
+        <p>Uma das maiores corretoras do Brasil, com ampla oferta de produtos.</p>
+        <div class="list">
+          <p><strong>Pontos fortes:</strong> Grande variedade de investimentos.</p>
+          <p><strong>Pontos fracos:</strong> Interface mais complexa para iniciantes.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="footer-note">
+      ⚠️ Este conteúdo é educativo. Não é recomendação de investimento.  
+      Apenas apresento plataformas para fins de conhecimento e comparação.
+    </p>
+
+  </div>
+</body>
+</html>
