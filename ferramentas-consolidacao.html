@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ferramentas Consolidadoras de Investimentos | Construa Seu Capital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #020b2d;
+      --border: #0f1b4c;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #020b2d, #020617);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .topo{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .titulo-site{
+      margin:0;
+      font-size:1.8rem;
+      color:#e5f0ff;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020b2d, #020617);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+    }
+
+    .logo a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      border-radius: 10px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .logo a:hover {
+      background: rgba(34,197,94,0.08);
+      transform: scale(1.03);
+    }
+
+    .logo img {
+      max-height: 80px;
+      max-width: 200px;
+      object-fit: contain;
+      filter: brightness(1.1);
+    }
+
+    .logo-hint {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .list {
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .list strong {
+      color: var(--accent);
+    }
+
+    .pros-cons ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    .pros-cons li {
+      padding-left: 24px;
+      position: relative;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      color: #e5e7eb;
+    }
+
+    .footer-note {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .logoSite {
+      width: 110px;
+      max-width: 40vw;
+      margin-bottom: 12px;
+    }
+
+    .voltar-home{
+      display:inline-block;
+      margin-top:24px;
+      padding:12px 22px;
+      border:2px solid #1aff6f;
+      border-radius:10px;
+      color:#1aff6f;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.2s;
+    }
+
+    .voltar-home:hover{
+      background:#1aff6f;
+      color:#001b0f;
+    }
+
+    .cta { 
+      margin-top:20px; 
+      text-align:center; 
+      font-size:14px; 
+      color:#a5b4fc; 
+    }
+	.list ul,
+.pros-cons ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul,
+li {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="topo">
+    <img src="logo.png" alt="Construa Seu Capital" class="logoSite">
+    <h1 class="titulo-site">Construa Seu Capital</h1>
+  </div>
+
+  <h1>Ferramentas Consolidadoras de Investimentos</h1>
+  <p class="subtitle">
+    Plataformas que ajudam a visualizar, organizar e acompanhar investimentos
+    espalhados entre diferentes bancos e corretoras, trazendo mais clareza
+    sobre patrimônio, rentabilidade e alocação.
+  </p>
+
+  <div class="grid">
+
+    <!-- Kinvo -->
+    <div class="card">
+      <div class="logo">
+        <a href="https://www.kinvo.com.br" target="_blank">
+          <img src="assets/logos/kinvo.png" alt="Kinvo">
+        </a>
+      </div>
+      <div class="logo-hint">Clique no ícone para visitar o site oficial</div>
+
+      <h2>Kinvo</h2>
+      <p>Ferramenta focada em consolidação automática e visão patrimonial.</p>
+
+      <div class="list">
+        <strong>✔ Pontos fortes:</strong>
+        <div class="pros-cons">
+          <ul>
+            <li>Consolidação automática</li>
+            <li>Boa visualização do patrimônio</li>
+            <li>Relatórios claros</li>
+          </ul>
+        </div>
+
+        <strong>⚠ Pontos fracos:</strong>
+        <div class="pros-cons">
+          <ul>
+            <li>Algumas funções são pagas</li>
+            <li>Menos recursos avançados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status Invest -->
+    <div class="card">
+      <div class="logo">
+        <a href="https://statusinvest.com.br" target="_blank">
+          <img src="assets/logos/statusinvest.png" alt="Status Invest">
+        </a>
+      </div>
+      <div class="logo-hint">Clique no ícone para visitar o site oficial</div>
+
+      <h2>Status Invest</h2>
+      <p>Plataforma popular para análise de ações e FIIs.</p>
+
+      <div class="list">
+        <strong>✔ Pontos fortes:</strong>
+        <ul class="pros-cons">
+          <li>Indicadores fundamentalistas</li>
+          <li>Controle de dividendos</li>
+          <li>Boa para renda variável</li>
+        </ul>
+
+        <strong>⚠ Pontos fracos:</strong>
+        <ul class="pros-cons">
+          <li>Consolidação parcial</li>
+          <li>Pouco foco em renda fixa</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Investidor10 -->
+    <div class="card">
+      <div class="logo">
+        <a href="https://investidor10.com.br" target="_blank">
+          <img src="assets/logos/investidor10.png" alt="Investidor10">
+        </a>
+      </div>
+      <div class="logo-hint">Clique no ícone para visitar o site oficial</div>
+
+      <h2>Investidor10</h2>
+      <p>Plataforma focada em acompanhamento de carteira e dividendos.</p>
+
+      <div class="list">
+        <strong>✔ Pontos fortes:</strong>
+        <ul class="pros-cons">
+          <li>Boa visualização da carteira</li>
+          <li>Controle de dividendos</li>
+          <li>Interface simples</li>
+        </ul>
+
+        <strong>⚠ Pontos fracos:</strong>
+        <ul class="pros-cons">
+          <li>Recursos avançados pagos</li>
+          <li>Menor foco em renda fixa</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Planilhas -->
+    <div class="card">
+      <div class="logo">
+        <a href="#" target="_blank">
+          <img src="assets/logos/planilhas.png" alt="Planilhas">
+        </a>
+      </div>
+      <div class="logo-hint">Use sua planilha personalizada</div>
+
+      <h2>Planilhas Próprias</h2>
+      <p>Controle manual feito pelo próprio investidor, com personalização total.</p>
+
+      <div class="list">
+        <strong>✔ Pontos fortes:</strong>
+        <ul class="pros-cons">
+          <li>Total controle</li>
+          <li>Sem custo</li>
+          <li>Personalização completa</li>
+        </ul>
+
+        <strong>⚠ Pontos fracos:</strong>
+        <ul class="pros-cons">
+          <li>Atualização é manual</li>
+          <li>Exige disciplina</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta">
+    Aprenda a organizar sua carteira no canal <b>Construa Seu Capital</b><br>
+    <a href="https://www.youtube.com/@ConstruaSeuCapital" target="_blank" style="color:#22c55e;text-decoration:none;">
+      👉 Acesse o canal no YouTube
+    </a>
+  </div>
+
+  <div style="text-align:center">
+    <a class="voltar-home" href="index.html">🏠 Voltar para Home</a>
+  </div>
+
+</div>
+</body>
+</html>
